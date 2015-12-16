@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Appendere",
+	"description": "This will add a canvas to every page, which will allow you to create notes",
+	"version": "0.6",
+	
+	"permissions": [
+		"contextMenus",
+		"activeTab"
+	 ],
+
+	"content_scripts": [
+		{      
+    		"matches": ["<all_urls>"],
+      		"js": ["scripts/appendereCanvasCreator.js"]   
+    	}
+  	],
+	 
+	"browser_action": {
+		"default_icon": "pictures/icon.png",
+		"name": "Click to make notes on this page",
+		"default_popup": "popup.html"
+	}
+	
+}
