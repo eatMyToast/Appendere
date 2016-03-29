@@ -1,3 +1,3 @@
 # Appendere
 
-Chrome plugin for painting stuffs
+Chrome plugin for drawing on webpages
